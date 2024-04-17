@@ -34,13 +34,18 @@ body {
     font-size: 15px;
     border-radius: 4px;
   }
+  .workGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    grid-column-gap: 20px;
+  }
   .flexContainer {
     display:flex;
     flex-direction: row-reverse;
   }
   .flexContainer > div {
     background-color: #f1f1e3;
-    width: 33%;
     margin: 10px;
     padding: 20px;
   }
@@ -57,4 +62,26 @@ body {
     display: inline-block;
     padding: 0px 7px;
   }
+  .mySkills .myWork{
+    padding: 5%;
+    background-color: #f1f1e3;
+  }
+  @media only screen and (min-width: 480px) 
+  and (max-width: 767px)  {
+.workGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    grid-column-gap: 20px;
+}
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    grid-column-gap: 20px;
+    
+  }
+
+}
+
   
